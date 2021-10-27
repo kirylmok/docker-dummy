@@ -11,7 +11,7 @@ pipeline {
         stage ('Build docker image') {
             steps {
                 script {
-                    docker.build('kirylm.jfrog.io/default-docker-local/alpine-curl:latest')
+                    docker.build()
                 }
             }
         }
